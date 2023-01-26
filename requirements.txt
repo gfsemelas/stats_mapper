@@ -1,4 +1,5 @@
 cairosvg
 easygui
 numpy
+openpyxl
 pandas

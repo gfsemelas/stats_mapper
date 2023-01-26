@@ -372,8 +372,9 @@ def _legend(
         # á: &#225;
         # í: &#237;
         # less-than: &#60;
-        # greater-than: &#62;
         # less-than or equal: &#8804;
+        # greater-than: &#62;
+        # greater-than or equal: &#8805;
         # en-dash &#8211;
         'en': {
             's-1': 'less than ',
@@ -397,17 +398,17 @@ def _legend(
             'hl': ['Minimum', 'Maximal']
         },
         'math': {
-            's-1': '&#8804; ',
+            's-1': '&#60; ',
             's-2': '',
             's-3': ' &#8211; ',
-            's-4': '&#62; ',
+            's-4': '&#8805; ',
             'hl': ['minimum', 'maximum']
         },
         'nerd': {
-            's-1': 'x &#8804; ',
+            's-1': 'x &#60; ',
             's-2': '',
-            's-3': ' &#60; x &#8804; ',
-            's-4': 'x &#62; ',
+            's-3': ' &#8804; x &#60; ',
+            's-4': 'x &#8805; ',
             'hl': ['min(x)', 'max(x)']
         }
     }
