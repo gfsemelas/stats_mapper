@@ -136,7 +136,8 @@ def save_map(
         file_name = fname + '{}'
         path = fpath
 
-    existing_file_names = [file_fields(f)[1] for f in get_file_names(path)]
+    existing_file_names = [file_fields(f)[1] for f in get_file_names(path)
+                           if file_fields(f)[2] == ('.png' if bitmap else '.svg')]
     i = 0
     template = ''
     while file_name.format(template) in existing_file_names and not overwrite:
