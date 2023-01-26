@@ -1,9 +1,18 @@
-# `stats_mapper`
+```
+     _        _
+ ___| |_ __ _| |_ ___     _ __ ___   __ _ _ __  _ __   ___ _ __
+/ __| __/ _` | __/ __|   | '_ ` _ \ / _` | '_ \| '_ \ / _ \ '__|
+\__ \ || (_| | |_\__ \   | | | | | | (_| | |_) | |_) |  __/ |
+|___/\__\__,_|\__|___/___|_| |_| |_|\__,_| .__/| .__/ \___|_|
+                    |_____|              |_|   |_|
+```
 Get geographic maps with countries colored from quantitative or qualitative data, using the 2-digit ISO codes.
 
-Execute `draw_gui.py` to start the GUI where you can specify the options to generate your map, or execute `draw.py` to specify those options as arguments in the command line.
+**— IMPORTANT NOTE:** there is a *requirements.txt* file which you can use to install the necessary dependencies. Feel free to use `pip install -r requirements.txt` in non-Windows systems. However, if you are working with Windows this will not work due to [this issue](https://cairocffi.readthedocs.io/en/stable/overview.html#installing-cairo-on-windows) related with `cairosvg` library, in which case you will need to fix the issue for your system yourself, or use an Anaconda environment and install the dependencies via `conda install -c conda-forge --file requirements.txt`.
 
-- `draw_gui.py` inputs:
+**— METHOD:** execute `draw_gui.py` to start the GUI where you can specify the options to generate your map, or execute `draw.py` to specify those options as arguments in the command line.
+
+- ***draw_gui.py*** inputs:
   - **Data_file**: path to the file with the data.
   - **CSV separator**: CSV-separator if `Data file` is a CSV file.
   - **Sheet name**: sheet where the data are if `Data file` is a spreadsheet.
@@ -35,7 +44,7 @@ Execute `draw_gui.py` to start the GUI where you can specify the options to gene
   - **Width**: width of the PNG if `Bitmap` is `"Yes"`. Leave `"auto"` for automatic width.
   - **Out map**: path to the generated map image.
 
-- `draw.py` command line arguments:
+- ***draw.py*** command line arguments:
   - `data_file`: (`str`) path to the file with the data.
   - `-z`, `--out_map`: (`str`, default=`None`) path to the generated map image.
   - `-c`, `--separator`: (`str`, default=`","`) separator if `file` is a CSV file.
